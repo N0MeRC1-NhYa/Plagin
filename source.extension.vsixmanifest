@@ -3,9 +3,9 @@
     <Metadata>
         <Identity Id="0849074a-e9fc-4e16-a591-6e43d904f539" Version="1.0" Language="en-US" Publisher="тимофей беляченко" />
         <DisplayName>Plagin</DisplayName>
-        <Description xml:space="preserve">This plugin alows you to copy your file easily using the pastebin service  </Description>
-        <Icon>Resources\kisspng-computer-icons-icon-design-cut-copy-and-paste-cl-taobao-clothing-promotional-copy-5b08bad091a807.0208443015272987685966 - Копировать.png</Icon>
-        <PreviewImage>Resources\kisspng-computer-icons-icon-design-cut-copy-and-paste-cl-taobao-clothing-promotional-copy-5b08bad091a807.0208443015272987685966.png</PreviewImage>
+        <Description xml:space="preserve">This plugin allows you to copy your file easily using the pastebin service  </Description>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Preview.png</PreviewImage>
         <Tags >Copy, Pastebin</Tags>
     </Metadata>
     <Installation>
