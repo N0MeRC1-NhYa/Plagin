@@ -1,0 +1,4 @@
+﻿api_dev_key=2e406a462a9e40d23b1e983e6eee18bd
+api_paste_expire_date=10M
+api_paste_private=0
+api_paste_format=csharp

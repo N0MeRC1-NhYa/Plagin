@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="0849074a-e9fc-4e16-a591-6e43d904f539" Version="1.0" Language="en-US" Publisher="тимофей беляченко" />
+        <DisplayName>Plagin</DisplayName>
+        <Description xml:space="preserve">This plugin alows you to copy your file easily using the pastebin service  </Description>
+        <Icon>Resources\kisspng-computer-icons-icon-design-cut-copy-and-paste-cl-taobao-clothing-promotional-copy-5b08bad091a807.0208443015272987685966 - Копировать.png</Icon>
+        <PreviewImage>Resources\kisspng-computer-icons-icon-design-cut-copy-and-paste-cl-taobao-clothing-promotional-copy-5b08bad091a807.0208443015272987685966.png</PreviewImage>
+        <Tags >Copy, Pastebin</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
