@@ -122,6 +122,7 @@ namespace Plagin
                     PName += FilePath[i];
                     i--;
                 }
+                PName.Reverse();
                 String data = UKey + POption + "&" + PCode + Code + "&" + EDate + "&" + PPrivate + "&api_paste_name=" + PName + "&" + PFormat;
                 byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(data);
                 request.ContentType = "application/x-www-form-urlencoded";
