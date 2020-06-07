@@ -124,7 +124,7 @@ build:
   include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
 
   # MSBuild verbosity level
-  verbosity: quiet|normal|detailed
+  verbosity: normal
 
 
 
