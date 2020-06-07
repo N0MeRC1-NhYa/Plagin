@@ -1,4 +1,5 @@
 # Pastebin plugin for VS
+https://travis-ci.org/N0MeRC1-NhYa/Plagin.svg?branch=master&status=failed
 Download the extention from the VS Gallery or get the CI build
 ------------------------------------------------------------
 This plugin allows you to copy your file easily using the pastebin service  
