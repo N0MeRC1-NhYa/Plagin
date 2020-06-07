@@ -124,29 +124,9 @@ build:
   include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
 
   # MSBuild verbosity level
-  verbosity: quiet|minimal|normal|detailed
+  verbosity: quiet|normal|detailed
 
 
-
-
-#---------------------------------#
-#      artifacts configuration    #
-#---------------------------------#
-
-artifacts:
-
-  # pushing a single file
-  - path: test.zip
-
-  # pushing a single file with environment variable in path and "Deployment name" specified
-  - path: MyProject\bin\$(configuration)
-    name: myapp
-
-  # pushing entire folder as a zip archive
-  - path: logs
-
-  # pushing all *.nupkg files in build directory recursively
-  - path: '**\*.nupkg'
 
 
 #---------------------------------#
@@ -264,21 +244,4 @@ deploy_script:
 
 # to disable deployment
 #deploy: off
-
-#---------------------------------#
-#        global handlers          #
-#---------------------------------#
-
-# on successful build
-on_success:
-  - do something
-
-# on build failure
-on_failure:
-  - do something
-
-# after build failure or success
-on_finish:
-  - do something
-
 
