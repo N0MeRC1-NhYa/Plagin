@@ -1,8 +1,9 @@
 language: csharp
 solution: Plagin.sln
+sudo:required
 mono:
   - none
 dotnet:
-  -latest
+  -3.0
 install:
   - nuget restore Plagin.sln
