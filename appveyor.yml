@@ -1,46 +1,12 @@
 
-# Notes:
-#   - Minimal appveyor.yml file is an empty file. All sections are optional.
-#   - Indent each level of configuration with 2 spaces. Do not use tabs!
-#   - All section names are case-sensitive.
-#   - Section names should be unique on each level.
-
-#---------------------------------#
-#      general configuration      #
-#---------------------------------#
-
-# version format
-version: 1.0.{build}
-
-# you can use {branch} name in version format too
-# version: 1.0.{build}-{branch}
-
-# branches to build
-branches:
-  # whitelist
-  only:
-    - master
-
-
-#---------------------------------#
-#    environment configuration    #
-#---------------------------------#
-
-# Build worker image (VM template)
 image: Visual Studio 2015
 
-# scripts that are called at very beginning, before repo cloning
 init:
   - git config --global core.autocrlf input
 
 # clone directory
 clone_folder: c:\projects\Plagin
 
-# fetch repository as zip archive
-shallow_clone: true                 # default is "false"
-
-# set clone depth
-clone_depth: 5                      # clone entire repository history if not defined
 
 # setting up etc\hosts file
 
@@ -76,16 +42,10 @@ build:
   publish_wap_xcopy: true         # package Web Application Projects (WAP) for XCopy deployment
   publish_wap_beanstalk: true     # Package Web Applications for AWS Elastic Beanstalk deployment
   publish_wap_octopus: true       # Package Web Applications for Octopus deployment
-  publish_azure_webjob: true      # Package Azure WebJobs for Zip Push deployment
-  publish_azure: true             # package Azure Cloud Service projects and push to artifacts
   publish_aspnet_core: true       # Package ASP.NET Core projects
   publish_core_console: true      # Package .NET Core console projects
-  publish_nuget: true             # package projects with .nuspec files and push to artifacts
   publish_nuget_symbols: true     # generate and publish NuGet symbol packages
-  include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
 
-  # MSBuild verbosity level
-  verbosity: normal
 
 
 
