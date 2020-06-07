@@ -1,0 +1,7 @@
+language: csharp
+solution: Plagin.sln
+mono:
+  - latest
+install:
+  - nuget restore Plagin.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
